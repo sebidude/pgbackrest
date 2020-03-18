@@ -467,7 +467,7 @@ storageS3ListInternal(
                     httpQueryAdd(query, S3_QUERY_DELIMITER_STR, FSLASH_STR);
 
                 // Use list type 2
-                httpQueryAdd(query, S3_QUERY_LIST_TYPE_STR, S3_QUERY_VALUE_LIST_TYPE_2_STR);
+                //httpQueryAdd(query, S3_QUERY_LIST_TYPE_STR, S3_QUERY_VALUE_LIST_TYPE_2_STR);
 
                 // Don't specified empty prefix because it is the default
                 if (!strEmpty(queryPrefix))

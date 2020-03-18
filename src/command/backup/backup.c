@@ -1903,7 +1903,7 @@ backupComplete(InfoBackup *const infoBackup, Manifest *const manifest)
         const String *const latestLink = storagePathP(storageRepo(), STRDEF(STORAGE_REPO_BACKUP "/" BACKUP_LINK_LATEST));
 
         // Remove an existing latest link/file in case symlink capabilities have changed
-        storageRemoveP(storageRepoWrite(), latestLink);
+        //storageRemoveP(storageRepoWrite(), latestLink);
 
         if (storageFeature(storageRepoWrite(), storageFeatureSymLink))
         {
